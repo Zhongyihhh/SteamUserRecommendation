@@ -15,11 +15,27 @@ All datasets collect data from web scraping Steam game stores and public Steam u
 
 # Insights
 1. K-Means and Hierarchical Clustering algorithms were applied.
-2. Clustering results were visualized in t-SNE plots.
-3. The most popular game generes for each group of users were identified and analyzed.
-4. An example of recommending games for target users were introduced.
-
+3. Clustering results were visualized in t-SNE plots.
+4. The most popular game generes for each group of users were identified and analyzed.
+5. An example of recommending games for target users were introduced.
 Detailed coding, analysis and visualizations can be found in the jupyter notebook file, 'Final_Project.ipynb'.
+
+## K-Means:
+Parameter K (number of clusters) for K-Means algorithm was selected through "Elbow Plot" and average sihouette score: 
+![image](https://user-images.githubusercontent.com/47155713/134284761-129629f9-1497-4155-8ab0-96da367afc24.png)
+![image](https://user-images.githubusercontent.com/47155713/134284797-3e0d3f2f-3340-4531-87fe-e61d64cd61ee.png)
+
+T-sne plot showing the clustering results with k = 4:
+![image](https://user-images.githubusercontent.com/47155713/134284954-4bf69649-4131-4225-9b2c-2903f8cf84d9.png)
+
+## Hierarchical:
+Number of clusters and linkage were chosen by comparing sihouette score:
+![image](https://user-images.githubusercontent.com/47155713/134285067-bc72fa1b-660f-4af0-948e-0ce5b484ce05.png)
+
+T-sne plot showing the clustering results with num_clusters = 4 at ward linkage:
+![image](https://user-images.githubusercontent.com/47155713/134285161-669c02df-ff4e-4699-abe5-cfe63979c689.png)
+
+
 
 # Reference
 - Chiu, J. (2017, May 16). Steam - What's your Game? NYC Data Science Academy. https://nycdatascience.com/blog/student-works/web-scraping/steam-whats-game/.
